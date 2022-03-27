@@ -1,0 +1,25 @@
+{
+  "name": "monopoly-bank-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "Luca Selinski",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^6.12.4",
+    "jsonfile": "^6.0.1",
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-xo": "^0.32.1",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "eslint-plugin-unicorn": "^21.0.0"
+  }
+}

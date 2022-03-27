@@ -1,0 +1,156 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"oneOf": [
+		{
+			"type": "object",
+			"properties": {
+				"name": {
+					"const": "join"
+				},
+				"parameters": {
+					"type": "object",
+					"properties": {
+						"id": {
+							"type": "string"
+						},
+						"name": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"id",
+						"name"
+					]
+				}
+			},
+			"required": [
+				"name",
+				"parameters"
+			]
+		},
+		{
+			"type": "object",
+			"properties": {
+				"name": {
+					"const": "create"
+				},
+				"parameters": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"name"
+					]
+				}
+			},
+			"required": [
+				"name",
+				"parameters"
+			]
+		},
+		{
+			"type": "object",
+			"properties": {
+				"name": {
+					"const": "rejoin"
+				},
+				"parameters": {
+					"type": "object",
+					"properties": {
+						"id": {
+							"type": "string"
+						},
+						"secret": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"id",
+						"secret"
+					]
+				}
+			},
+			"required": [
+				"name",
+				"parameters"
+			]
+		},
+		{
+			"type": "object",
+			"properties": {
+				"name": {
+					"const": "pay"
+				},
+				"parameters": {
+					"type": "object",
+					"properties": {
+						"to": {
+							"type": "integer"
+						},
+						"amount": {
+							"type": "integer",
+							"minimum": 1
+						}
+					},
+					"required": [
+						"to",
+						"amount"
+					]
+				}
+			},
+			"required": [
+				"name",
+				"parameters"
+			]
+		},
+		{
+			"type": "object",
+			"properties": {
+				"name": {
+					"const": "take"
+				},
+				"parameters": {
+					"type": "object",
+					"properties": {
+						"amount": {
+							"type": "integer",
+							"minimum": 1
+						}
+					},
+					"required": [
+						"amount"
+					]
+				}
+			},
+			"required": [
+				"name",
+				"parameters"
+			]
+		},
+		{
+			"type": "object",
+			"properties": {
+				"name": {
+					"const": "takeFreeParking"
+				}
+			},
+			"required": [
+				"name"
+			]
+		},
+		{
+			"type": "object",
+			"properties": {
+				"name": {
+					"const": "leave"
+				}
+			},
+			"required": [
+				"name"
+			]
+		}
+	]
+}

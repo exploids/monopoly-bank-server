@@ -1,0 +1,15 @@
+{
+	"env": {
+		"es6": true,
+		"node": true
+	},
+	"plugins": ["sonarjs", "unicorn"],
+	"extends": ["xo", "plugin:sonarjs/recommended", "plugin:unicorn/recommended"],
+	"parserOptions": {
+		"ecmaVersion": 8,
+		"sourceType": "module"
+	},
+	"rules": {
+		"semi": ["error", "never"]
+	}
+}
